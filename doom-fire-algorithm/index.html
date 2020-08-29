@@ -1,6 +1,11 @@
 <html>
     <head>
         <style>
+            body{
+                /* padding: 0;
+                margin: 0; */
+                background-color: #ccc
+            }
             table{
                 border-collapse: collapse;
                 border: 1px solid #000;
@@ -28,10 +33,29 @@
                 height: 4px;
                 border: 0;
             }
+            .content{
+                /* padding: 20px; */
+                margin-bottom: 20px;
+                text-align: left;
+                vertical-align: center;
+                
+            }
+
         </style>
     </head>
     <body>
+        <div class="content">
+            <div>
+                <button id="add" onclick="increaseFireIntencity()">+</button>
+                <button id="min" onclick="minFireIntencity()">Min Intensity</button>
+                <button id="max" onclick="maxFireIntencity()">Max Intensity</button>
+                <button id="sub" onclick="decreaseFireIntencity()">-</button>
+                <button id="reset" onclick="resetFireIntencity()">Reset</button>
+            </div>
+        </div>
         <div id="fireCanvas"></div>
+    
+
         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>
